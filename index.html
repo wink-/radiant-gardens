@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Gardens - Growing Food Freedom in the Finger Lakes</title>
+    <meta name="description" content="Radiant Gardens designs and installs custom food gardens that save families $1,000+ annually on groceries. Serving Ithaca, Corning, and Horseheads, NY.">
+    
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Radiant Gardens - Custom Food Garden Installation">
+    <meta property="og:description" content="Save $1,000+ yearly on groceries with our turnkey garden systems">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://radiantgardens.co">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #2d5016;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #8bc34a;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/><path fill="%238bc34a" d="M0 300L50 325L100 300L150 275L200 300L250 325L300 300L350 275L400 300L450 325L500 300L550 275L600 300L650 325L700 300L750 275L800 300L850 325L900 300L950 275L1000 300L1050 325L1100 300L1150 275L1200 300V600H0V300Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #8bc34a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #7cb342;
+        }
+        
+        /* Value Proposition */
+        .value-props {
+            padding: 80px 0;
+            background: #f9f9f9;
+        }
+        
+        .props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .prop-card {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .prop-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Garden Designs */
+        .gardens {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2d5016;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        
+        .garden-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .garden-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .garden-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .garden-image {
+            height: 200px;
+            background: #8bc34a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .garden-info {
+            padding: 20px;
+        }
+        
+        .garden-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2d5016;
+        }
+        
+        .garden-savings {
+            color: #8bc34a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Service Areas */
+        .service-areas {
+            background: #2d5016;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .areas-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .area {
+            font-size: 1.2rem;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info a {
+            color: #8bc34a;
+            text-decoration: none;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 120px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">🌱 Radiant Gardens</div>
+            <ul class="nav-links">
+                <li><a href="#gardens">Garden Designs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Growing Food Freedom in the Finger Lakes</h1>
+            <p class="subtitle">Save $1,000+ annually with a custom food garden</p>
+            <a href="#contact" class="cta-button">Start Growing Today</a>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-props">
+        <div class="container">
+            <h2 class="section-title">Why Radiant Gardens?</h2>
+            <div class="props-grid">
+                <div class="prop-card">
+                    <div class="prop-icon">🏗️</div>
+                    <h3>Turnkey Installation</h3>
+                    <p>We build the complete garden system. You just plant and harvest.</p>
+                </div>
+                <div class="prop-card">
+                    <div class="prop-icon">💰</div>
+                    <h3>Guaranteed ROI</h3>
+                    <p>Average family saves $1,000+ per year. System pays for itself in 2 years.</p>
+                </div>
+                <div class="prop-card">
+                    <div class="prop-icon">📱</div>
+                    <h3>App Support</h3>
+                    <p>Our garden success app guides you through planting, maintenance, and harvest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garden Designs -->
+    <section id="gardens" class="gardens">
+        <div class="container">
+            <h2 class="section-title">Choose Your Garden</h2>
+            <p class="section-subtitle">Professionally designed for maximum yield and beauty</p>
+            <div class="garden-grid">
+                <div class="garden-card">
+                    <div class="garden-image">🍕</div>
+                    <div class="garden-info">
+                        <h3 class="garden-name">Pizza Garden</h3>
+                        <p>Everything for homemade pizza and Italian dishes</p>
+                        <p class="garden-savings">Saves $770/year</p>
+                    </div>
+                </div>
+                <div class="garden-card">
+                    <div class="garden-image">🥗</div>
+                    <div class="garden-info">
+                        <h3 class="garden-name">Salsa & Salad</h3>
+                        <p>Year-round greens and perfect salsa ingredients</p>
+                        <p class="garden-savings">Saves $1,180/year</p>
+                    </div>
+                </div>
+                <div class="garden-card">
+                    <div class="garden-image">🥢</div>
+                    <div class="garden-info">
+                        <h3 class="garden-name">Stir-Fry Express</h3>
+                        <p>Asian vegetables and herbs for healthy stir-fries</p>
+                        <p class="garden-savings">Saves $1,100/year</p>
+                    </div>
+                </div>
+                <div class="garden-card">
+                    <div class="garden-image">🥫</div>
+                    <div class="garden-info">
+                        <h3 class="garden-name">Preservation Pro</h3>
+                        <p>Designed for canning and long-term storage</p>
+                        <p class="garden-savings">Saves $1,400/year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Serving the Finger Lakes Region</h2>
+            <div class="areas-list">
+                <div class="area">Ithaca</div>
+                <div class="area">Corning</div>
+                <div class="area">Horseheads</div>
+                <div class="area">Elmira</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Grow?</h2>
+            <p class="section-subtitle">Spring 2025 installations now booking</p>
+            <div class="contact-info">
+                <p>📞 Call: (607) 301-1146</p>
+                <p>📧 Email: <a href="mailto:grow@radiantgardens.co">grow@radiantgardens.co</a></p>
+                <p>📍 Pine Valley, NY</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Radiant Gardens. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/radiantgardensny">📷</a>
+                <a href="https://facebook.com/radiantgardensny">📘</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
