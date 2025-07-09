@@ -1,9 +1,3 @@
-Absolutely. Here is the complete, merged business plan, revised to reflect the solo-operator "Master Craftsman" model and the strategic decision to offer the Digital Support Hub as a free, value-added service.
-
-This version is focused, lean, and presents a highly credible and compelling case for a profitable artisan business.
-
----
-
 # **Radiant Gardens: Complete Business Plan 2025-2027**
 **(Artisan Model)**
 
