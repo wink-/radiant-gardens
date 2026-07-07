@@ -1,5 +1,9 @@
 # Log
 
+## 2026-07-07
+
+- Refined OKF documentation format, repo agent command guidance, and status resume details.
+
 ## 2026-07-06
 
 - Added repo-specific agent instructions.

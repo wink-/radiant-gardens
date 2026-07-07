@@ -1,3 +1,7 @@
+---
+okf_version: "0.1"
+---
+
 # Radiant Gardens Docs
 
 Radiant Gardens is a static marketing site and business-planning repo for a Finger Lakes food garden installation service.
@@ -16,3 +20,8 @@ Radiant Gardens is a static marketing site and business-planning repo for a Fing
 
 - `index.html` contains the complete static landing page.
 - `radiant-gardens-business-plan.md` and `updated-business-plan.md` contain business-plan source material.
+
+## Resume Path
+
+- Read [status.md](status.md) for the current phase and next work.
+- Read [notes.md](notes.md) before changing marketing claims or business-plan-derived copy.

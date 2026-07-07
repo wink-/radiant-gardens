@@ -6,11 +6,7 @@ tags: [status, roadmap]
 timestamp: 2026-07-06T00:00:00Z
 ---
 
-# Status
-
-## Current Phase
-
-Static marketing-site and business-plan documentation bootstrap.
+# Status: Static Marketing Site Bootstrap
 
 ## Completed
 
@@ -28,3 +24,13 @@ Static marketing-site and business-plan documentation bootstrap.
 
 - No stack or deployment configuration is present in the repo.
 - Business-plan documents may diverge from landing-page copy unless reviewed together.
+
+## Last Worked On
+
+2026-07-07 - Refined OKF index metadata, repo agent commands, status resume details, and documentation log.
+
+## Suggested First Command
+
+```bash
+git status --short --branch
+```
