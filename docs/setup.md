@@ -1,29 +1,48 @@
 ---
 type: Setup
 title: Setup
-description: Local editing and validation notes for Radiant Gardens.
-tags: [setup, static-site]
-timestamp: 2026-07-06T00:00:00Z
+description: Install, develop, build, and verify the Radiant Gardens Astro site.
+tags: [setup, astro, build]
+status: current
+generated:
+  by: Astro rebuild agent (OpenCode)
+  at: 2026-10-23T16:17:32Z
 ---
 
 # Setup
 
 ## Requirements
 
-- A browser for previewing `index.html`.
+- Node.js 20+ and npm (Astro 7 requirement).
 - Git for version control.
 
-## Local Preview
+## Install
 
-Open `index.html` directly in a browser, or serve the folder with any local static file server.
+```bash
+npm install --no-audit --no-fund
+```
+
+## Develop / build / preview
+
+```bash
+npm run dev       # local dev server
+npm run build     # static build to dist/ — the verification gate
+npm run preview   # serve the built site locally
+```
 
 ## Validation
 
-No dependency install is required. Lightweight checks:
-
 ```bash
+npm run build
 git status --short --branch
 git diff --check
 ```
 
-For content changes, inspect the rendered page manually on desktop and mobile widths.
+`npm run build` must pass cleanly after any site change; it is the documented
+verification command for this repo.
+
+## Notes
+
+- No environment variables or API keys are needed; the site is fully static.
+- No `site` URL is configured in `astro.config.mjs` until a production domain is confirmed.
+- `node_modules/`, `dist/`, and `.astro/` are git-ignored and must never be committed.

@@ -3,34 +3,40 @@ type: Status
 title: Status
 description: Current state and next tasks for Radiant Gardens.
 tags: [status, roadmap]
-timestamp: 2026-07-06T00:00:00Z
+status: current
+generated:
+  by: Astro rebuild agent (OpenCode)
+  at: 2026-10-23T16:17:32Z
 ---
 
-# Status: Static Marketing Site Bootstrap
+# Status: Astro Rebuild on Feature Branch
 
 ## Completed
 
-- Single-page static site exists in `index.html`.
-- Business-plan documents exist at the repository root.
-- OKF documentation scaffold added under `docs/`.
+- First real website built as a modern Astro 7 static site on branch `feature/astro-rebuild`.
+- Superseded placeholder `index.html` removed; Astro pages now generate the public site.
+- Pages: home, services, process, about, contact (honest in-planning state), and 404 — responsive, accessible, botanical design in plain CSS.
+- Public copy derived from both business plans under the public/private content boundary (see `notes.md`).
+- `npm run build` passes cleanly on the feature branch.
 
 ## Next Tasks
 
-- Confirm production hosting target and deployment workflow.
-- Review landing-page claims against the latest business plan.
-- Add contact/lead capture implementation details if they exist outside this repo.
+- Confirm production domain, then set `site` in `astro.config.mjs` and replace the `[to be announced]` placeholders on `/contact/` with real contact details.
+- Review all public copy against the business plans before launch.
+- Merge `feature/astro-rebuild` and choose a hosting target (any static host works).
 
 ## Blockers/Risks
 
-- No stack or deployment configuration is present in the repo.
-- Business-plan documents may diverge from landing-page copy unless reviewed together.
+- No confirmed domain, email, or phone number: the contact page ships with clearly marked `[to be announced]` placeholders.
+- The business is in planning: a site-wide banner states "In planning — launching 2026" so no page overstates readiness.
+- Business-plan documents may diverge from site copy over time; review them together before content changes.
 
 ## Last Worked On
 
-2026-07-07 - Refined OKF index metadata, repo agent commands, status resume details, and documentation log.
+2026-10-23 - Built the Astro site on `feature/astro-rebuild` and updated the OKF documentation and repo agent instructions.
 
 ## Suggested First Command
 
 ```bash
-git status --short --branch
+git status --short --branch && npm run build
 ```
