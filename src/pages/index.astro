@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroGarden from '../components/HeroGarden.astro';
+import Icon from '../components/Icon.astro';
+import JsonLd from '../components/JsonLd.astro';
+import Sprig from '../components/Sprig.astro';
+---
+
+<BaseLayout>
+  <JsonLd
+    description="Artisan food-garden design and installation for families in the Finger Lakes region of Upstate New York — founder-led craftsmanship with included lifetime support."
+  />
+
+  <section class="hero">
+    <div class="container">
+      <div>
+        <p class="eyebrow">Finger Lakes · Upstate New York</p>
+        <h1>A food garden crafted for your family — and supported for life.</h1>
+        <p class="lede">
+          Radiant Gardens designs and builds beautiful, high-yield food gardens
+          for busy families — one artisan, one garden at a time. From first
+          sketch to first harvest, and every season after.
+        </p>
+        <div class="btn-row mt-2">
+          <a class="btn btn-primary" href="/contact/">Start the conversation</a>
+          <a class="btn btn-secondary" href="/services/">Explore the services</a>
+        </div>
+        <p class="hero-note">
+          Currently in planning — we expect to welcome our first gardens in 2026.
+        </p>
+      </div>
+      <div class="hero-art">
+        <HeroGarden />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-paper">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>From empty corner to kitchen garden</h2>
+        <p class="lede">
+          Every Radiant Garden begins with a conversation and ends with a family
+          harvesting its own food.
+        </p>
+      </div>
+      <div class="card-grid cols-2">
+        <div class="card">
+          <div class="card-icon"><Icon name="design" /></div>
+          <h3>Garden design</h3>
+          <p>
+            A personalized plan for your space, your sunlight, and the food your
+            family actually eats — drawn for the Finger Lakes growing season.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="trowel" /></div>
+          <h3>Installation &amp; build</h3>
+          <p>
+            Raised beds, trellises, irrigation, and rich, prepared soil —
+            installed by the founder, built to last, in a day or two on site.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="sprout" /></div>
+          <h3>Planting &amp; coaching</h3>
+          <p>
+            We plant the first season with you and coach you through care, so
+            the garden thrives under your hands — not ours.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="hub" /></div>
+          <h3>Digital Support Hub</h3>
+          <p>
+            Planting calendars, reminders, expert diagnosis, and a private
+            client community — included free, for the life of your garden.
+          </p>
+          <a class="card-link" href="/services/#digital-support-hub"
+            >See what's included &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Why Radiant Gardens</p>
+        <h2>Three things you won't find elsewhere</h2>
+      </div>
+      <div class="card-grid cols-3">
+        <div class="card center">
+          <span class="pillar-num">I.</span>
+          <h3>Founder-led quality</h3>
+          <p>
+            The founder personally designs and builds every garden. No crews, no
+            hand-offs — each project is a signature piece, walked through and
+            signed off with you.
+          </p>
+        </div>
+        <div class="card center">
+          <span class="pillar-num">II.</span>
+          <h3>Lifetime support, included</h3>
+          <p>
+            Every garden comes with the Digital Support Hub for life — no
+            subscription, no expiration. When your garden has a question,
+            there's an expert on the other end.
+          </p>
+        </div>
+        <div class="card center">
+          <span class="pillar-num">III.</span>
+          <h3>Real grocery ROI</h3>
+          <p>
+            A well-planned food garden pays you back — in peak-season produce
+            and lower grocery bills, season after season. An investment in your
+            home that feeds you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation"><Sprig /></div>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The process</p>
+        <h2>Consult, design, build, harvest</h2>
+        <p class="lede">
+          A simple, unhurried path from "someday a garden" to your first bowl of
+          cherry tomatoes.
+        </p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true"></span>
+          <div>
+            <h3>Consult</h3>
+            <p>
+              We walk your yard together — sun, space, soil — and talk about how
+              your family likes to eat.
+            </p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true"></span>
+          <div>
+            <h3>Design</h3>
+            <p>
+              A personalized garden plan, tuned to our region and your table,
+              which you approve before anything is built.
+            </p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true"></span>
+          <div>
+            <h3>Build</h3>
+            <p>
+              The founder personally builds your garden in one to two focused
+              days on site — beds, soil, irrigation, trellises.
+            </p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true"></span>
+          <div>
+            <h3>First harvest</h3>
+            <p>
+              First-season planting help, coaching, and lifetime support as your
+              garden starts producing.
+            </p>
+          </div>
+        </li>
+      </ol>
+      <p><a class="card-link" href="/process/">See the full process &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container center">
+      <div class="divider" role="presentation"><Sprig /></div>
+      <h2>Rooted in the Finger Lakes</h2>
+      <p class="lede" style="margin-inline: auto">
+        We serve families across the Finger Lakes region of Upstate New York —
+        including Ithaca, Corning, Horseheads, Elmira, and the surrounding
+        communities. Not sure if you're in range? Ask us when consultations
+        open.
+      </p>
+      <p class="mt-2">
+        <a class="btn btn-secondary" href="/contact/">Ask about your area</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container">
+      <Sprig />
+      <h2>Ready to plan your garden?</h2>
+      <p>
+        Radiant Gardens is in planning and expects to begin consultations in
+        2026. Tell us about your yard — we'd love to hear what you're dreaming
+        of.
+      </p>
+      <a class="btn btn-primary" href="/contact/">Say hello</a>
+    </div>
+  </section>
+</BaseLayout>

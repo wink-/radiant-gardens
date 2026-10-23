@@ -1,0 +1,66 @@
+---
+const year = new Date().getFullYear();
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/services/', label: 'Services' },
+  { href: '/process/', label: 'Process' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 19C5 11.5 10 6.5 19 6c.5 8.5-4.5 13.5-14 13Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"></path>
+              <path
+                d="M5 19c3.5-4.5 7-8 12.5-11.5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <span class="brand-name">Radiant Gardens</span>
+        </a>
+        <p class="footer-tagline">Your food. Your yard. Our craftsmanship.</p>
+        <p>
+          Artisan food-garden design, installation, and lifetime support for
+          families across the Finger Lakes region of Upstate New York.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          {
+            nav.map((item) => (
+              <li>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <p>
+          The Finger Lakes region of Upstate New York — including Ithaca,
+          Corning, Horseheads, Elmira, and the surrounding communities.
+        </p>
+        <p>In planning — launching 2026.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; {year} Radiant Gardens. All rights reserved.</span>
+      <span>Crafted in the Finger Lakes, for the Finger Lakes.</span>
+    </div>
+  </div>
+</footer>

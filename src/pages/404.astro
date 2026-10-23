@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sprig from '../components/Sprig.astro';
+---
+
+<BaseLayout
+  title="Page not found"
+  description="The page you're looking for doesn't exist at Radiant Gardens."
+>
+  <section class="not-found">
+    <div class="container">
+      <Sprig />
+      <p class="eyebrow">404</p>
+      <h1>This path hasn't been planted.</h1>
+      <p class="lede" style="margin-inline: auto">
+        The page you're looking for doesn't exist — but there's plenty growing
+        elsewhere on this site.
+      </p>
+      <p class="mt-2">
+        <a class="btn btn-primary" href="/">Back to the homepage</a>
+        <a class="btn btn-secondary" href="/services/">Browse the services</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
