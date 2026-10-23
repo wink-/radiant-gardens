@@ -6,7 +6,7 @@ tags: [status, roadmap]
 status: current
 generated:
   by: Astro rebuild agent (OpenCode)
-  at: 2026-10-23T16:17:32Z
+  at: 2026-10-24T00:00:00Z
 ---
 
 # Status: Astro Rebuild on Feature Branch
@@ -33,6 +33,7 @@ generated:
 
 ## Last Worked On
 
+2026-10-24 - Added the design-mockup workflow in `mockups/` (gallery, homepage baseline, `linen` variant); production files unchanged.
 2026-10-23 - Built the Astro site on `feature/astro-rebuild` and updated the OKF documentation and repo agent instructions.
 
 ## Suggested First Command

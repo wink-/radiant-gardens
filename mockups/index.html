@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radiant Gardens — Design Mockups</title>
+    <style>
+      /* Gallery chrome: neutral dark, deliberately unrelated to the site's
+         palette. The mockups themselves carry the real design. */
+      :root {
+        --g-bg: #171a16;
+        --g-panel: #1f241d;
+        --g-edge: #31382c;
+        --g-text: #e7e9e0;
+        --g-muted: #9ba392;
+        --g-accent: #b5c2a2;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--g-bg);
+        color: var(--g-text);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        padding: 3rem 1.5rem 4rem;
+      }
+      .wrap { max-width: 1000px; margin-inline: auto; }
+      .kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--g-accent);
+        margin: 0 0 0.75rem;
+      }
+      h1 { font-size: 1.7rem; margin: 0 0 0.5rem; font-weight: 600; }
+      h2 { font-size: 1.15rem; margin: 0; font-weight: 600; }
+      .sub { color: var(--g-muted); max-width: 68ch; margin: 0 0 2.5rem; }
+      .sub code, .legend code {
+        background: var(--g-panel);
+        border: 1px solid var(--g-edge);
+        border-radius: 5px;
+        padding: 0.08em 0.35em;
+        font-size: 0.85em;
+      }
+      .legend {
+        background: var(--g-panel);
+        border: 1px solid var(--g-edge);
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 3rem;
+      }
+      .legend h2 { margin-bottom: 0.75rem; }
+      .legend ul { margin: 0; padding-left: 1.2rem; color: var(--g-muted); }
+      .legend li { margin-bottom: 0.35rem; }
+      .legend strong { color: var(--g-text); font-weight: 600; }
+      .variant { margin-bottom: 3.5rem; }
+      .variant-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.5rem 1.25rem;
+        margin-bottom: 0.9rem;
+      }
+      .variant-head h2 a { color: var(--g-text); text-decoration: none; }
+      .variant-head h2 a:hover { color: var(--g-accent); text-decoration: underline; }
+      .chip {
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 0.2rem 0.7rem;
+        border: 1px solid var(--g-edge);
+        color: var(--g-muted);
+      }
+      .chip.baseline { color: #a7c08a; border-color: #4a5a3c; }
+      .chip.date { color: var(--g-muted); }
+      .variant-desc { color: var(--g-muted); margin: 0 0 1rem; max-width: 72ch; }
+      .open { color: var(--g-accent); font-weight: 600; text-decoration: none; white-space: nowrap; }
+      .open:hover { text-decoration: underline; }
+      .frame {
+        width: min(100%, 922px);
+        aspect-ratio: 1280 / 920;
+        overflow: hidden;
+        border: 1px solid var(--g-edge);
+        border-radius: 12px;
+        background: #10130e;
+      }
+      .frame iframe {
+        width: 1280px;
+        height: 920px;
+        border: 0;
+        transform: scale(0.72);
+        transform-origin: top left;
+      }
+      footer { color: var(--g-muted); font-size: 0.9rem; border-top: 1px solid var(--g-edge); padding-top: 1.5rem; }
+      footer code { background: var(--g-panel); border: 1px solid var(--g-edge); border-radius: 5px; padding: 0.08em 0.35em; font-size: 0.85em; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="kicker">Design mockups</p>
+        <h1>Radiant Gardens — visual direction reviews</h1>
+        <p class="sub">
+          Plain static HTML, outside the Astro build. Every mockup links the real
+          <code>src/styles/global.css</code> and differs only through its local
+          <code>variant.css</code>. Markup is byte-identical everywhere. See
+          <code>mockups/README.md</code> for the full workflow.
+        </p>
+      </header>
+
+      <section class="legend" aria-label="Legend">
+        <h2>Legend</h2>
+        <ul>
+          <li><strong class="chip baseline">Baseline</strong> — <code>current/</code>: faithful reproduction of the production homepage (hero, services overview, three differentiators, process teaser, CTA band).</li>
+          <li><strong class="chip">Variant</strong> — dated folder <code>YYYY-MM-DD-&lt;name&gt;/</code>: one design variable changed versus the baseline, via tokens in <code>variant.css</code> only.</li>
+          <li><strong>Rules:</strong> one variable at a time · identical markup · real <code>global.css</code> linked, never forked · real content only · verdicts recorded in <code>docs/notes.md</code>.</li>
+          <li><strong>Promotion:</strong> an adopted variant is ported into <code>src/styles/global.css</code> on a <code>design/&lt;name&gt;</code> branch and merged by normal PR.</li>
+        </ul>
+      </section>
+
+      <section class="variant">
+        <div class="variant-head">
+          <h2><a href="./current/">current/</a></h2>
+          <span class="chip baseline">Baseline</span>
+          <a class="open" href="./current/">Open full size &rarr;</a>
+        </div>
+        <p class="variant-desc">
+          The production design as of 2026-10-24 — sage green / cream / terracotta,
+          Fraunces display over Work Sans. Every variant is judged against this page.
+        </p>
+        <div class="frame">
+          <iframe src="./current/" title="Baseline mockup: current production homepage design" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="variant">
+        <div class="variant-head">
+          <h2><a href="./2026-10-24-linen/">2026-10-24-linen/</a></h2>
+          <span class="chip">Variant</span>
+          <span class="chip date">2026-10-24</span>
+          <a class="open" href="./2026-10-24-linen/">Open full size &rarr;</a>
+        </div>
+        <p class="variant-desc">
+          "Linen" — a lighter, softer direction. More cream, lighter sage, terracotta
+          pulled back, extra whitespace, larger serif display scale, gentler
+          shadows and borders. Tokens only; variable changed: palette + density scale.
+        </p>
+        <div class="frame">
+          <iframe src="./2026-10-24-linen/" title="Linen variant mockup: lighter, softer design direction" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <footer>
+        Workflow and promotion rules: <code>mockups/README.md</code> · Verdicts:
+        <code>docs/notes.md</code> · This gallery is static chrome — it never
+        ships and is not part of the Astro build.
+      </footer>
+    </div>
+  </body>
+</html>

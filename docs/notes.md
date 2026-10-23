@@ -6,7 +6,7 @@ tags: [notes]
 status: current
 generated:
   by: Astro rebuild agent (OpenCode)
-  at: 2026-10-23T16:17:32Z
+  at: 2026-10-24T00:00:00Z
 ---
 
 # Notes
@@ -31,6 +31,26 @@ the website:
 - Safe public material: mission, services (design, build, planting/coaching,
   Digital Support Hub), process, service area, and the honest in-planning
   status.
+
+## Design mockup workflow (`mockups/`)
+
+- `mockups/` holds plain static HTML design explorations, outside the Astro
+  build: not Astro routes, never in `public/` or `dist/`, never linked from
+  the site. No JS, no external assets, no build step.
+- `mockups/current/` is the baseline: a faithful static reproduction of the
+  homepage with real class names and real copy, linking the real
+  `../../src/styles/global.css` plus a documented no-op `variant.css`.
+- Variants live in dated folders (`YYYY-MM-DD-<name>/`) with markup
+  byte-identical to the baseline; all changes live only in that folder's
+  `variant.css`. One variable at a time. Real content only (respect the
+  public/private boundary above).
+- Promotion path: a winning variant is ported into `src/styles/global.css`
+  on a `design/<name>` branch and merged via a normal PR. Mockup folders
+  never ship. Full rules: `mockups/README.md`. Verdicts are recorded here.
+- 2026-10-24 `linen` — intent: a lighter/softer direction. More cream,
+  lighter sage, terracotta accent pulled back, extra whitespace, larger
+  serif display scale, gentler shadows/borders. Tokens-only change.
+  Verdict: pending review.
 
 ## Gotchas
 

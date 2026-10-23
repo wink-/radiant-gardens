@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-24
+
+- Added the `mockups/` design-mockup workflow, plain static HTML outside the Astro build: a dark gallery (`mockups/index.html`), a faithful homepage baseline (`mockups/current/`), and the first variant (`mockups/2026-10-24-linen/` — "linen", a lighter/softer tokens-only direction).
+- Documented the mockup rules in `mockups/README.md` and `docs/notes.md`: one variable at a time, dated variant folders, the real `src/styles/global.css` linked and overridden only via `variant.css`, identical markup, real content only, promotion via `design/<name>` branch → PR, verdicts recorded in `docs/notes.md`.
+- No production files changed; the Astro build is unaffected.
+
 ## 2026-10-23
 
 - Rebuilt the site as a modern Astro 7 project on branch `feature/astro-rebuild`; the superseded placeholder `index.html` was removed.
