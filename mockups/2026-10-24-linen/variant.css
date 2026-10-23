@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Linen variant — 2026-10-24
+   Direction: lighter and softer. More cream, lighter sage, terracotta
+   accent pulled back, extra whitespace, larger serif display scale,
+   gentler shadows and borders.
+   Tokens first. Overrides below exist only where global.css hardcodes a
+   value the tokens cannot reach (header glass, primary-button hover,
+   CTA-band body text). No markup changes, no JS, no external assets.
+   ========================================================================== */
+
+:root {
+  /* More cream, airier paper */
+  --cream: #fdfbf3;
+  --cream-deep: #f7f2e5;
+  --paper: #fffef9;
+
+  /* Lighter, gentler sage */
+  --sage: #98a588;
+  --sage-soft: #c3ccb3;
+  --sage-deep: #6f8061;
+  --forest: #4a5540;
+
+  /* Terracotta pulled back: softer, less shouty */
+  --terracotta: #cd9172;
+  --terracotta-deep: #b37c5b;
+
+  --ink: #3e4438;
+  --muted: #7c8272;
+  --line: #ece4cf;
+
+  /* Gentler chrome */
+  --radius: 18px;
+  --shadow: 0 6px 20px rgba(74, 85, 64, 0.06);
+}
+
+/* --- Larger serif display scale ------------------------------------------ */
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 4.3rem);
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+}
+
+body {
+  line-height: 1.75;
+}
+
+/* --- Extra whitespace ------------------------------------------------------ */
+
+.section {
+  padding-block: clamp(4.25rem, 9.5vw, 7.25rem);
+}
+
+.section-tight {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.hero .container {
+  padding-block: clamp(4.75rem, 10vw, 8.5rem);
+}
+
+.card {
+  padding: 2.2rem 2.1rem;
+  border-color: var(--cream-deep);
+}
+
+/* --- Hardcoded-value overrides (tokens cannot reach) ----------------------- */
+
+.site-header {
+  background: rgba(253, 251, 243, 0.92);
+}
+
+.btn-primary:hover {
+  background: #a56c4a;
+}
+
+.cta-band p {
+  color: #d0d7c1;
+}

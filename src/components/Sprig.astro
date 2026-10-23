@@ -1,0 +1,35 @@
+---
+// Small leaf-line accent used as a decorative divider/ornament.
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<svg
+  class:list={['sprig', className]}
+  width="72"
+  height="26"
+  viewBox="0 0 72 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+>
+  <path
+    d="M3 24C22 21 47 14 69 2"
+    stroke="currentColor"
+    stroke-width="1.6"
+    stroke-linecap="round"></path>
+  <path
+    d="M20 20c-5-1-8-5-8-9 4 0 8 3 8 9Z"
+    fill="currentColor"
+    opacity="0.55"></path>
+  <path
+    d="M38 15c-1-5 1-9 5-11 2 4 0 9-5 11Z"
+    fill="currentColor"
+    opacity="0.55"></path>
+  <path
+    d="M55 8c-4-3-5-7-3-11 4 1 6 6 3 11Z"
+    fill="currentColor"
+    opacity="0.55"></path>
+</svg>

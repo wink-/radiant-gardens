@@ -1,0 +1,8 @@
+/* ==========================================================================
+   Baseline (current) — no-op variant sheet.
+   Every mockup page loads the REAL ../../src/styles/global.css first and
+   then this file, so the baseline and every variant share one structure.
+   The baseline intentionally changes nothing: what renders here is the
+   production design. Any exploration belongs in a dated variant folder
+   (see ../README.md) — one variable at a time.
+   ========================================================================== */

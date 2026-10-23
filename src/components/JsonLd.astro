@@ -1,0 +1,22 @@
+---
+// Schema.org LocalBusiness JSON-LD with only fields known to be true:
+// no address, phone, URL, or opening hours until they exist.
+interface Props {
+  description: string;
+}
+
+const { description } = Astro.props;
+
+const data = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Radiant Gardens',
+  description,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Finger Lakes region, New York, United States',
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)} />

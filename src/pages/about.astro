@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import Sprig from '../components/Sprig.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Radiant Gardens runs on a Master Craftsman model: the founder personally designs, builds, and supports every food garden in the Finger Lakes region. Meet the philosophy behind the work."
+>
+  <section class="section-tight">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h1>A craftsman's approach to food gardens</h1>
+      <p class="lede">
+        Radiant Gardens runs on a simple, old-fashioned idea: the person who
+        designs your garden should be the person who builds it — and who stands
+        behind it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-paper">
+    <div class="container">
+      <div class="service-detail">
+        <div class="sticky-label">
+          <Sprig />
+          <p class="eyebrow">The founder</p>
+          <h2>Built by one pair of hands</h2>
+        </div>
+        <div>
+          <p>
+            The founder of Radiant Gardens comes to garden-making from systems
+            engineering — a career of designing things that work reliably —
+            joined with a long-held passion for sustainable agriculture. It
+            turns out a kitchen garden is a system too: sun, soil, water, and
+            seasons, arranged so that food simply follows.
+          </p>
+          <p>
+            Radiant Gardens works on a "Master Craftsman" model. There are no
+            crews and no hand-offs: the founder personally designs and builds
+            every garden, then personally supports it for as long as you grow.
+            The number of gardens built each year is deliberately small, so every
+            project gets full attention — and every client gets the artisan, not
+            a rotating crew.
+          </p>
+          <p>
+            When Radiant Gardens launches in 2026, that's the experience you can
+            expect: one expert, from first sketch to first harvest.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we value</p>
+        <h2>Four commitments behind every garden</h2>
+      </div>
+      <div class="card-grid cols-2">
+        <div class="card">
+          <div class="card-icon"><Icon name="trowel" /></div>
+          <h3>Craftsmanship</h3>
+          <p>
+            Every garden is a signature piece — built from quality materials,
+            set level, and finished with care we'd want in our own yard.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="sprout" /></div>
+          <h3>Empowerment</h3>
+          <p>
+            A garden should succeed under your hands, not ours. We teach, coach,
+            and equip you to grow with confidence.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="leafy" /></div>
+          <h3>Sustainability</h3>
+          <p>
+            In the materials we choose, the way we build, and the way we run the
+            business — a garden should give back more than it takes.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><Icon name="hub" /></div>
+          <h3>Partnership</h3>
+          <p>
+            We're in it for the long haul. Every garden includes lifetime
+            support, because a garden is never really "finished."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container center">
+      <div class="divider" role="presentation"><Sprig /></div>
+      <h2>Where we work</h2>
+      <p class="lede" style="margin-inline: auto">
+        Radiant Gardens serves families across the Finger Lakes region of
+        Upstate New York — including Ithaca, Corning, Horseheads, Elmira, and
+        the surrounding communities.
+      </p>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container">
+      <Sprig />
+      <h2>Grow with us</h2>
+      <p>
+        We're preparing for our first season in 2026. If a founder-built food
+        garden sounds like your kind of project, we'd love to meet you.
+      </p>
+      <a class="btn btn-primary" href="/contact/">Say hello</a>
+    </div>
+  </section>
+</BaseLayout>

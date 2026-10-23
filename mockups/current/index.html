@@ -1,0 +1,473 @@
+<!doctype html>
+<!--
+  Radiant Gardens — design mockup BASELINE (mockups/current/)
+  Faithful static reproduction of src/pages/index.astro (homepage) as of
+  2026-10-24: real class names, real copy, real component markup.
+  Links the REAL ../../src/styles/global.css; variant.css is a no-op.
+  Markup must stay byte-identical across all mockup variants (see ../README.md).
+  Invisible metadata (JSON-LD) is intentionally omitted — visual reproduction only.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Artisan food-garden design and installation for families in the Finger Lakes region of Upstate New York — founder-led craftsmanship with a lifetime Digital Support Hub. In planning, launching 2026."
+    />
+    <meta name="theme-color" content="#2f3a2a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../src/styles/global.css" />
+    <link rel="stylesheet" href="variant.css" />
+    <title>Radiant Gardens</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="banner" role="note">
+      <strong>In planning — launching 2026.</strong> Radiant Gardens is preparing its
+      first Finger Lakes gardens.
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 19C5 11.5 10 6.5 19 6c.5 8.5-4.5 13.5-14 13Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"></path>
+              <path
+                d="M5 19c3.5-4.5 7-8 12.5-11.5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <span class="brand-name">Radiant Gardens</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/process/">Process</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div>
+            <p class="eyebrow">Finger Lakes · Upstate New York</p>
+            <h1>A food garden crafted for your family — and supported for life.</h1>
+            <p class="lede">
+              Radiant Gardens designs and builds beautiful, high-yield food gardens
+              for busy families — one artisan, one garden at a time. From first
+              sketch to first harvest, and every season after.
+            </p>
+            <div class="btn-row mt-2">
+              <a class="btn btn-primary" href="/contact/">Start the conversation</a>
+              <a class="btn btn-secondary" href="/services/">Explore the services</a>
+            </div>
+            <p class="hero-note">
+              Currently in planning — we expect to welcome our first gardens in 2026.
+            </p>
+          </div>
+          <div class="hero-art">
+            <svg
+              viewBox="0 0 520 400"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="rg-hero-title"
+            >
+              <title id="rg-hero-title">
+                Illustration of a raised-bed kitchen garden with young plants, a trellis,
+                and the sun
+              </title>
+
+              <!-- sun -->
+              <circle cx="430" cy="70" r="42" fill="#c0714f" opacity="0.14"></circle>
+              <circle cx="430" cy="70" r="24" stroke="#c0714f" stroke-width="2"></circle>
+
+              <!-- hills -->
+              <path
+                d="M-10 304c92-40 168-18 262-40 76-17 138-4 278 26"
+                stroke="#a9b598"
+                stroke-width="2"
+                stroke-linecap="round"></path>
+              <path
+                d="M34 318c76-22 158-10 244-26"
+                stroke="#cfd6bf"
+                stroke-width="2"
+                stroke-linecap="round"></path>
+
+              <!-- trellis -->
+              <g stroke="#9f5334" stroke-width="2" stroke-linecap="round" opacity="0.75">
+                <path d="M372 158v132"></path>
+                <path d="M432 158v132"></path>
+                <path d="M356 176h92"></path>
+                <path d="M356 212h92"></path>
+                <path d="M356 248h92"></path>
+                <path d="M356 284h92"></path>
+              </g>
+
+              <!-- climbing vines on the trellis -->
+              <path
+                d="M382 288c-10-22 8-34-2-58 8-14-2-24 4-40"
+                stroke="#55684c"
+                stroke-width="2"
+                stroke-linecap="round"></path>
+              <path
+                d="M424 288c8-18-6-30 4-52-6-16 4-26 0-42"
+                stroke="#55684c"
+                stroke-width="2"
+                stroke-linecap="round"></path>
+              <path d="M386 236c-10 0-16-6-16-14 10-2 16 4 16 14Z" fill="#7c8b6b"></path>
+              <path d="M428 200c10 0 16-6 16-14-10-2-16 4-16 14Z" fill="#7c8b6b"></path>
+              <path d="M384 268c-10 2-18-2-20-12 10-4 18 0 20 12Z" fill="#a9b598"></path>
+              <path d="M430 252c10 2 18-2 20-12-10-4-18 0-20 12Z" fill="#a9b598"></path>
+
+              <!-- ground shadow -->
+              <ellipse cx="258" cy="370" rx="216" ry="9" fill="#55684c" opacity="0.1"></ellipse>
+
+              <!-- raised bed -->
+              <rect
+                x="62"
+                y="298"
+                width="396"
+                height="62"
+                rx="10"
+                fill="#f3ecdc"
+                stroke="#55684c"
+                stroke-width="2"></rect>
+              <rect
+                x="52"
+                y="282"
+                width="416"
+                height="20"
+                rx="10"
+                fill="#fffdf6"
+                stroke="#55684c"
+                stroke-width="2"></rect>
+              <path d="M164 300v58M356 300v58" stroke="#d8d0b8" stroke-width="2"></path>
+
+              <!-- plant 1: young greens -->
+              <g>
+                <path
+                  d="M132 282c-2-18-2-34 2-48"
+                  stroke="#55684c"
+                  stroke-width="2"
+                  stroke-linecap="round"></path>
+                <path d="M134 254c-16 2-26-6-28-20 16-4 26 4 28 20Z" fill="#7c8b6b"></path>
+                <path d="M132 236c2-14 12-22 26-22-2 14-12 22-26 22Z" fill="#a9b598"></path>
+                <path d="M134 214c-12 0-20-8-20-18 12-2 20 6 20 18Z" fill="#7c8b6b"></path>
+                <circle cx="136" cy="196" r="5" fill="#c0714f"></circle>
+              </g>
+
+              <!-- plant 2: tomato-ish -->
+              <g>
+                <path
+                  d="M252 282c6-26 2-52-6-74 8-12 6-26-4-34"
+                  stroke="#55684c"
+                  stroke-width="2"
+                  stroke-linecap="round"></path>
+                <path d="M248 244c-16-2-24-12-22-26 14 2 22 12 22 26Z" fill="#7c8b6b"></path>
+                <path d="M250 210c-14-4-20-14-16-28 13 4 19 14 16 28Z" fill="#a9b598"></path>
+                <path d="M246 180c-12-6-16-16-10-28 11 6 15 16 10 28Z" fill="#7c8b6b"></path>
+                <path d="M252 226c14-2 22-10 22-24-14 0-22 10-22 24Z" fill="#a9b598"></path>
+                <circle cx="238" cy="262" r="7" fill="#c0714f"></circle>
+                <circle cx="266" cy="272" r="6" fill="#c0714f" opacity="0.8"></circle>
+              </g>
+
+              <!-- plant 3: climbing bean on a stake -->
+              <g>
+                <path
+                  d="M330 282v-96"
+                  stroke="#9f5334"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  opacity="0.7"></path>
+                <path
+                  d="M330 282c-4-30 8-58 2-96 10-8 10-20 2-28"
+                  stroke="#55684c"
+                  stroke-width="2"
+                  stroke-linecap="round"></path>
+                <path d="M331 226c-14 0-22-8-22-20 14-2 22 8 22 20Z" fill="#7c8b6b"></path>
+                <path d="M330 192c2-14 12-20 24-18-4 14-14 20-24 18Z" fill="#a9b598"></path>
+                <path d="M331 252c12 2 20-4 22-16-12-4-20 2-22 16Z" fill="#7c8b6b"></path>
+                <circle cx="333" cy="158" r="5" fill="#c0714f"></circle>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-paper">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">What we do</p>
+            <h2>From empty corner to kitchen garden</h2>
+            <p class="lede">
+              Every Radiant Garden begins with a conversation and ends with a family
+              harvesting its own food.
+            </p>
+          </div>
+          <div class="card-grid cols-2">
+            <div class="card">
+              <div class="card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M7 15.5l8.5-8.5 2 2L9 17.5H7v-2Z"/><path d="M7.5 8.5h5"/></svg>
+              </div>
+              <h3>Garden design</h3>
+              <p>
+                A personalized plan for your space, your sunlight, and the food your
+                family actually eats — drawn for the Finger Lakes growing season.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4 20c0-6 3.5-9.5 8-10l2 2c-.5 4.5-4 8-10 8Z"/><path d="M13 11l7-7"/></svg>
+              </div>
+              <h3>Installation &amp; build</h3>
+              <p>
+                Raised beds, trellises, irrigation, and rich, prepared soil —
+                installed by the founder, built to last, in a day or two on site.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 20v-8"/><path d="M12 12C12 8 9 6 5 6c0 4 3 6 7 6Z"/><path d="M12 12c0-3.5 2.5-5.5 7-5.5 0 4-3 5.5-7 5.5Z"/><path d="M5 20h14"/></svg>
+              </div>
+              <h3>Planting &amp; coaching</h3>
+              <p>
+                We plant the first season with you and coach you through care, so
+                the garden thrives under your hands — not ours.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4.5" width="18" height="12.5" rx="2"/><path d="M9.5 21h5"/><path d="M12 13.5c-2.6 0-4.2-1.6-4.4-4.2 2.8-.3 4.4 1.5 4.4 4.2Z"/><path d="M12 13.5c0-2.3 1.6-3.6 4.2-3.6.2 2.6-1.6 3.9-4.2 3.6Z"/></svg>
+              </div>
+              <h3>Digital Support Hub</h3>
+              <p>
+                Planting calendars, reminders, expert diagnosis, and a private
+                client community — included free, for the life of your garden.
+              </p>
+              <a class="card-link" href="/services/#digital-support-hub"
+                >See what's included &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow">Why Radiant Gardens</p>
+            <h2>Three things you won't find elsewhere</h2>
+          </div>
+          <div class="card-grid cols-3">
+            <div class="card center">
+              <span class="pillar-num">I.</span>
+              <h3>Founder-led quality</h3>
+              <p>
+                The founder personally designs and builds every garden. No crews, no
+                hand-offs — each project is a signature piece, walked through and
+                signed off with you.
+              </p>
+            </div>
+            <div class="card center">
+              <span class="pillar-num">II.</span>
+              <h3>Lifetime support, included</h3>
+              <p>
+                Every garden comes with the Digital Support Hub for life — no
+                subscription, no expiration. When your garden has a question,
+                there's an expert on the other end.
+              </p>
+            </div>
+            <div class="card center">
+              <span class="pillar-num">III.</span>
+              <h3>Real grocery ROI</h3>
+              <p>
+                A well-planned food garden pays you back — in peak-season produce
+                and lower grocery bills, season after season. An investment in your
+                home that feeds you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider" role="presentation">
+        <svg class="sprig" width="72" height="26" viewBox="0 0 72 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 24C22 21 47 14 69 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+          <path d="M20 20c-5-1-8-5-8-9 4 0 8 3 8 9Z" fill="currentColor" opacity="0.55"></path>
+          <path d="M38 15c-1-5 1-9 5-11 2 4 0 9-5 11Z" fill="currentColor" opacity="0.55"></path>
+          <path d="M55 8c-4-3-5-7-3-11 4 1 6 6 3 11Z" fill="currentColor" opacity="0.55"></path>
+        </svg>
+      </div>
+
+      <section class="section-tight">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">The process</p>
+            <h2>Consult, design, build, harvest</h2>
+            <p class="lede">
+              A simple, unhurried path from "someday a garden" to your first bowl of
+              cherry tomatoes.
+            </p>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step-num" aria-hidden="true"></span>
+              <div>
+                <h3>Consult</h3>
+                <p>
+                  We walk your yard together — sun, space, soil — and talk about how
+                  your family likes to eat.
+                </p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step-num" aria-hidden="true"></span>
+              <div>
+                <h3>Design</h3>
+                <p>
+                  A personalized garden plan, tuned to our region and your table,
+                  which you approve before anything is built.
+                </p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step-num" aria-hidden="true"></span>
+              <div>
+                <h3>Build</h3>
+                <p>
+                  The founder personally builds your garden in one to two focused
+                  days on site — beds, soil, irrigation, trellises.
+                </p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step-num" aria-hidden="true"></span>
+              <div>
+                <h3>First harvest</h3>
+                <p>
+                  First-season planting help, coaching, and lifetime support as your
+                  garden starts producing.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <p><a class="card-link" href="/process/">See the full process &rarr;</a></p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container center">
+          <div class="divider" role="presentation">
+            <svg class="sprig" width="72" height="26" viewBox="0 0 72 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 24C22 21 47 14 69 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+              <path d="M20 20c-5-1-8-5-8-9 4 0 8 3 8 9Z" fill="currentColor" opacity="0.55"></path>
+              <path d="M38 15c-1-5 1-9 5-11 2 4 0 9-5 11Z" fill="currentColor" opacity="0.55"></path>
+              <path d="M55 8c-4-3-5-7-3-11 4 1 6 6 3 11Z" fill="currentColor" opacity="0.55"></path>
+            </svg>
+          </div>
+          <h2>Rooted in the Finger Lakes</h2>
+          <p class="lede" style="margin-inline: auto">
+            We serve families across the Finger Lakes region of Upstate New York —
+            including Ithaca, Corning, Horseheads, Elmira, and the surrounding
+            communities. Not sure if you're in range? Ask us when consultations
+            open.
+          </p>
+          <p class="mt-2">
+            <a class="btn btn-secondary" href="/contact/">Ask about your area</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="container">
+          <svg class="sprig" width="72" height="26" viewBox="0 0 72 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 24C22 21 47 14 69 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+            <path d="M20 20c-5-1-8-5-8-9 4 0 8 3 8 9Z" fill="currentColor" opacity="0.55"></path>
+            <path d="M38 15c-1-5 1-9 5-11 2 4 0 9-5 11Z" fill="currentColor" opacity="0.55"></path>
+            <path d="M55 8c-4-3-5-7-3-11 4 1 6 6 3 11Z" fill="currentColor" opacity="0.55"></path>
+          </svg>
+          <h2>Ready to plan your garden?</h2>
+          <p>
+            Radiant Gardens is in planning and expects to begin consultations in
+            2026. Tell us about your yard — we'd love to hear what you're dreaming
+            of.
+          </p>
+          <a class="btn btn-primary" href="/contact/">Say hello</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="/">
+              <span class="brand-mark" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 19C5 11.5 10 6.5 19 6c.5 8.5-4.5 13.5-14 13Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M5 19c3.5-4.5 7-8 12.5-11.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"></path>
+                </svg>
+              </span>
+              <span class="brand-name">Radiant Gardens</span>
+            </a>
+            <p class="footer-tagline">Your food. Your yard. Our craftsmanship.</p>
+            <p>
+              Artisan food-garden design, installation, and lifetime support for
+              families across the Finger Lakes region of Upstate New York.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/services/">Services</a></li>
+              <li><a href="/process/">Process</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Service area</h4>
+            <p>
+              The Finger Lakes region of Upstate New York — including Ithaca,
+              Corning, Horseheads, Elmira, and the surrounding communities.
+            </p>
+            <p>In planning — launching 2026.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Radiant Gardens. All rights reserved.</span>
+          <span>Crafted in the Finger Lakes, for the Finger Lakes.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

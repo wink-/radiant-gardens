@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import PlanningBanner from '../components/PlanningBanner.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const SITE_NAME = 'Radiant Gardens';
+const SITE_DESCRIPTION =
+  'Artisan food-garden design and installation for families in the Finger Lakes region of Upstate New York — founder-led craftsmanship with a lifetime Digital Support Hub. In planning, launching 2026.';
+
+const { title, description = SITE_DESCRIPTION } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#2f3a2a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <PlanningBanner />
+    <SiteHeader />
+    <main id="main">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>
