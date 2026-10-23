@@ -40,3 +40,9 @@ generated:
 ```bash
 git status --short --branch && npm run build
 ```
+
+
+## Platform relationship (2026-10-23)
+
+Intentionally standalone: this is a local-service marketing site, not a Streetcats
+publication destination. It is not registered as a content-platform theme.
